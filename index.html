@@ -885,4 +885,91 @@
 
         <!-- CERTIFICACIONES -->
         <section>
-          <!-- (resto del código continúa igual) -->
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">05 — Certificaciones</div>
+                    <h2 class="section-title">Formación técnica</h2>
+                </div>
+
+                <div class="cert-grid">
+                    <div class="cert">
+                        <strong>Dominando ChatGPT con la API de OpenAI</strong>
+                        <span>OpenWebinars</span>
+                    </div>
+                    <div class="cert">
+                        <strong>Curso de Git</strong>
+                        <span>OpenWebinars</span>
+                    </div>
+                    <div class="cert">
+                        <strong>Fundamentos de JavaScript</strong>
+                        <span>OpenWebinars</span>
+                    </div>
+                    <div class="cert">
+                        <strong>HTML5 y CSS3</strong>
+                        <span>OpenWebinars</span>
+                    </div>
+                    <div class="cert">
+                        <strong>Linux y Servidores</strong>
+                        <span>Instalación avanzada, servicios SSH y redes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="section-label">06 — Contacto</div>
+                    <h2>¿Hablamos?</h2>
+                    <p>
+                        Si quieres contactar conmigo, puedes hacerlo a través
+                        de cualquiera de estos canales.
+                    </p>
+
+                    <div class="contact-links">
+                        <a href="mailto:curroromerodiaz@gmail.com" class="btn btn-primary">
+                            ✉ Email
+                        </a>
+                        <a href="tel:+34600221522" class="btn btn-secondary">
+                            ☎ +34 600 22 15 22
+                        </a>
+                        <a href="https://www.linkedin.com/in/curro-romero-d%C3%ADaz-548b02330?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-secondary">
+                            LinkedIn ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <span>© 2026 Curro Romero Díaz</span>
+            <span>Sevilla, España · Developer / DAM</span>
+        </div>
+    </footer>
+
+    <!-- DARK MODE SCRIPT -->
+    <script>
+        const themeToggle = document.getElementById("themeToggle");
+
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+            const isDark = document.body.classList.contains("dark");
+            themeToggle.textContent = isDark ? "☀" : "☾";
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+        });
+
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark");
+            themeToggle.textContent = "☀";
+        }
+    </script>
+
+</body>
+</html>
